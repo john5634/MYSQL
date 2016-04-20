@@ -2,23 +2,23 @@ TO LOGIN from LINUX COMMAND LINE:
 mysql -u username -p
 
 AFTER YOU ARE LOGGED IN AND HAVE A: mysql>
-
 show databases;
 show tables from DATABASENAME;
 
 TO ENABLE ACCESS ACCROSS NETWORK:
-
 GRANT ALL ON *.* TO DATABASEUSERNAME@'IPADDRESS' IDENTIFIED BY 'password';
 DONT REMOVE THE QUOTES....
 
+FROM A SQL EDITOR OR COMMAND LINE:
 Querey Skelton:
 SELECT FEILDNAME
 FROM TABLENAME
-WHERE SOMESORTOFFILTER
+WHERE SOMESORTOFFILTER;
 
 Example:
 To show the first and last name, email address and store id of customers of store ID 2 ONLY the following query would be ran:
 
 SELECT first_name,last_name, email, store_id
 FROM customer
-WHERE store_id = 2
+WHERE store_id = 2;
+
